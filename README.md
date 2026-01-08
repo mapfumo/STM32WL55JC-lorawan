@@ -273,5 +273,3 @@ For complete project documentation, see:
 - [ ] Low-power modes
 
 ## License
-
-## Contributing
