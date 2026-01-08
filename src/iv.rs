@@ -36,7 +36,8 @@ where
 {
     /// Create an InterfaceVariant instance for an stm32wl/sx1262 combination
     pub fn new(
-        _irq: impl interrupt::typelevel::Binding<interrupt::typelevel::SUBGHZ_RADIO, InterruptHandler> + 'static,
+        _irq: impl interrupt::typelevel::Binding<interrupt::typelevel::SUBGHZ_RADIO, InterruptHandler>
+            + 'static,
         use_high_power_pa: bool,
         rf_switch_rx: Option<CTRL>,
         rf_switch_tx: Option<CTRL>,
@@ -117,7 +118,10 @@ impl<T: SpiBus> ErrorType for SubghzSpiDevice<T> {
 }
 
 impl<T: SpiBus> SpiDevice for SubghzSpiDevice<T> {
-    async fn transaction(&mut self, operations: &mut [Operation<'_, u8>]) -> Result<(), Self::Error> {
+    async fn transaction(
+        &mut self,
+        operations: &mut [Operation<'_, u8>],
+    ) -> Result<(), Self::Error> {
         pac::PWR.subghzspicr().modify(|w| w.set_nss(false));
 
         let op_res = 'ops: {
