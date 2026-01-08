@@ -1,6 +1,0 @@
-$ mkdir -p "/home/tony/dev/nucleo-wl55jc1/lora_1/target/thumbv7em-none-eabihf/debug/build/az-764b2e2f7f97dd40/out/try_track_caller"
-$ cd "/home/tony/dev/nucleo-wl55jc1/lora_1/target/thumbv7em-none-eabihf/debug/build/az-764b2e2f7f97dd40/out/try_track_caller"
-$ printf '%s' "// try_tra"... > "/home/tony/dev/nucleo-wl55jc1/lora_1/target/thumbv7em-none-eabihf/debug/build/az-764b2e2f7f97dd40/out/try_track_caller/try_track_caller.rs"
-$ cd "/home/tony/dev/nucleo-wl55jc1/lora_1/target/thumbv7em-none-eabihf/debug/build/az-764b2e2f7f97dd40/out/try_track_caller" && "/home/tony/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc" "try_track_caller.rs" "--emit=dep-info,metadata" >& /dev/null
-cargo:rustc-cfg=track_caller
-$ rm -r "/home/tony/dev/nucleo-wl55jc1/lora_1/target/thumbv7em-none-eabihf/debug/build/az-764b2e2f7f97dd40/out/try_track_caller"
