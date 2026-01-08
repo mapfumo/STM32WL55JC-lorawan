@@ -1,0 +1,3 @@
+cargo:rustc-link-search=/home/tony/dev/nucleo-wl55jc1/lora_1/target/thumbv7em-none-eabihf/debug/build/defmt-e0bd3fca872742e2/out
+cargo:rustc-check-cfg=cfg(c_variadic)
+cargo:rustc-check-cfg=cfg(no_cas)

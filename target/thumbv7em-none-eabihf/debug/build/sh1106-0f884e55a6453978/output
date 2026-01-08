@@ -1,0 +1,3 @@
+cargo:rustc-link-search=/home/tony/dev/nucleo-wl55jc1/lora_1/target/thumbv7em-none-eabihf/debug/build/sh1106-0f884e55a6453978/out
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-changed=memory.x
